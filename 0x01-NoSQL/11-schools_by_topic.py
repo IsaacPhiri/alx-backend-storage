@@ -11,5 +11,5 @@ def schools_by_topic(mongo_collection, topic):
     topic - topic to match
     """
 
-    sch_list = mongo_collection.find({"topics:" topic})
+    sch_list = list(mongo_collection.find({"topics:" topic}))
     return sch_list
