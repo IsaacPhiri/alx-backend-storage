@@ -12,4 +12,4 @@ def schools_by_topic(mongo_collection, topic):
     """
 
     sch_list = mongo_collection.find({"topics:" topic})
-    return [school for school in sch_list]
+    return sch_list
